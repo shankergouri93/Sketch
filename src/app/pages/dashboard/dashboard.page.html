@@ -1,0 +1,14 @@
+<div>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let fruit of fruits">
+      <div class="card" style="width: 18rem;">
+        <img src="{{fruit.img_src}}" class="card-img-top" alt="{{fruit.name}} fruit">
+        <div class="card-body">
+          <h5 class="card-title">{{fruit.name}}</h5>
+          <p class="card-text">{{fruit.content}}</p>
+          <button class="btn btn-primary" (click)="open(fruit.name)">Check nutrients</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
